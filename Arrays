@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() 
+{
+	int a[3][3];
+	int *p=&a[0][0];
+	int i=0;
+	int j;
+	for (i=0;i<3;i++)
+	{
+		for (j=0;j<3;j++)
+		{
+			printf("Enter element ");
+			scanf("%d",p);
+		}
+	}
+	for (i=0;i<3;i++)
+	{
+		printf("\n");
+		for (j=0;j<3;j++)
+		{
+			printf("%d",*((p+i*3)+j));
+			printf("\t");
+		}
+	
+	}
+	
+	
+	return 0;
+}
