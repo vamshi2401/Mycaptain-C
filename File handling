@@ -5,12 +5,12 @@ int main()
     FILE *fp;
     char ch, fname[30], newch[500];
     int i=0, j, COUNT=0;
-    printf("Enter the filename with extension: ");
+    printf("Enter the filename : ");
     gets(fname);
     fp = fopen(fname, "r");
     if(!fp)
     {
-        printf("Error in opening the file...\nExiting...");
+        printf("Error in opening the file\nExiting");
         getch();
         return 0;
     }
